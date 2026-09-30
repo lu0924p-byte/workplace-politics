@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>讀者回響｜職場政治學</title>
+  <meta name="description" content="閱讀《職場政治學》讀者回響，並預覽未來開放的心得投稿表單。">
+  <meta name="theme-color" content="#F5F4EE">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/content-data.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/readers.js" defer></script>
+</head>
+<body data-page="readers">
+  <div data-site-header></div>
+  <main id="main-content">
+    <header class="page-hero">
+      <div class="container page-hero-grid page-hero-grid--single">
+        <div class="reveal">
+          <p class="eyebrow">讀者回響　READER VOICES</p>
+          <h1>這面牆，留給讀完之後的你...</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="section section--paper" aria-labelledby="voices-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">讀者心得展示</p><h2 id="voices-title">真正的回響，會出現在這裡</h2></div>
+        </div>
+        <div class="reader-wall reveal" data-reader-voices></div>
+      </div>
+    </section>
+
+    <section class="section section--mist" aria-labelledby="submit-title">
+      <div class="container">
+        <div class="section-heading reveal reading-center"><h2 id="submit-title">如果你願意，請在這裡寫下你的心得</h2><p class="lede reader-invitation"><span>書裡如果有一段讓你想起自己某個下午，寫下來分享給我吧!</span><span>經過同意後會放上這面牆，匿名或署名都可以，你來決定</span></p></div>
+        <div class="submission-area reveal">
+          <div class="submission-state" data-submission-state role="status"></div>
+          <form class="submission-form" data-submission-form novalidate>
+            <p class="submission-privacy">心得經確認並核准公開後，才會呈現在這裡。Email 永遠不公開。</p>
+            <div class="form-grid">
+              <div class="field field--wide">
+                <label for="voice-text">你的心得 <span data-character-count>0 / 500</span></label>
+                <textarea id="voice-text" name="text" minlength="30" maxlength="500" required placeholder="哪一段打中你？當時你正在面對什麼？"></textarea>
+                <div class="field-note">三十字以上，五百字以內。</div>
+              </div>
+              <div class="field">
+                <label for="voice-who">想怎麼署名 <span>選填</span></label>
+                <input id="voice-who" name="who" type="text" maxlength="40" placeholder="例：竹科／專案經理 W">
+                <div class="field-note">留空就以「匿名讀者」刊出。</div>
+              </div>
+              <div class="field">
+                <label for="voice-email">聯絡信箱 <span>選填</span></label>
+                <input id="voice-email" name="email" type="email" maxlength="80" placeholder="your@email.com">
+                <div class="field-note">只用於刊登前確認，不會公開。</div>
+              </div>
+            </div>
+            <label class="consent"><input name="consent" type="checkbox" required><span>我同意這段文字經作者編輯與確認後，公開刊登於本站。</span></label>
+            <button class="button" type="submit">送出心得</button>
+            <p class="form-message" data-form-message role="status"></p>
+          </form>
+          <div class="form-success" data-form-success tabindex="-1">
+            <p class="eyebrow">送出完成</p>
+            <h3>收到了，謝謝你。</h3>
+            <p>你的心得已經送出。作者會親自讀過，若適合刊登，會依你選擇的方式放上這面牆。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>
